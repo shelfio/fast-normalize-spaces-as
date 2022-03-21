@@ -8,8 +8,8 @@ Also, it can be used as an example for a future Assemblyscript projects.
 
 ## Useful resources
 
-  - https://www.assemblyscript.org/
-  - https://github.com/torch2424/as-bind
+- <https://www.assemblyscript.org/>
+- <https://github.com/torch2424/as-bind>
 
 ## Build
 
