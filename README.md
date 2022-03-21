@@ -37,17 +37,17 @@ You can run `yarn benchmark:speed` to test on your own.
 
 ### Memory usage
 
-| Text size | [normalize-space-x](https://github.com/Xotic750/normalize-space-x) | [@shelf/fast-normalize-spaces](https://github.com/shelfio/fast-normalize-spaces) | Improvement |
-| --------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ----------- |
-| 33 kb     | 0.50mb                                                             | 1.29mb                                                                           | -           |
-| 330 kb    | 6.79mb                                                             | 2.16mb                                                                           | 3.14x       |
-| 3.3 mb    | 77.94mb                                                            | 12.35mb                                                                          | 6.3x        |
-| 33 mb     | 498.12mb                                                           | 112.62mb                                                                         | 4.42x       |
-| 100mb     | 1446.14mb                                                          | 338.11mb                                                                         | 4.28x       |
-| 150mb     | 2003.53mb                                                          | 506.54mb                                                                         | 3.96x       |
-| 200mb     | 2660.09mb                                                          | 674.83mb                                                                         | 3.94x       |
+| Text size | [@shelf/fast-normalize-spaces](https://github.com/shelfio/fast-normalize-spaces) | [@shelf/fast-normalize-spaces-as](https://github.com/shelfio/fast-normalize-spaces-as) | Improvement |
+| --------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------- |
+| 33 kb     | 1.11mb                                                                           | 0.76mb                                                                                 | +1.46x      |
+| 330 kb    | 1.92mb                                                                           | 2.92mb                                                                                 | -1.52x      |
+| 3.3 mb    | 12.20mb                                                                          | 27.43mb                                                                                | -2.25x      |
+| 33 mb     | 111.96mb                                                                         | 268.27mb                                                                               | -2.40x      |
+| 100mb     | 337.47mb                                                                         | 811.43mb                                                                               | -2.41x      |
+| 150mb     | 506.02mb                                                                         | 1066.09mb                                                                              | -2.11x      |
+| 200mb     | 674.87mb                                                                         | 1421.36mb                                                                              | -2.11x      |
 
-The larger the string the faster it gets. Memory usage is approximately 3x than the input data size.
+The larger the string the faster it gets. Memory usage is approximately 8x than the input data size.
 
 Set `TEXT_SIZE` variable value you want in the [test.sh](benchmark/memory/test.sh) script and
 run the following command to test memory usage:
